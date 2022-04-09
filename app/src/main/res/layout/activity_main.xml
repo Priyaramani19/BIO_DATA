@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="?actionBarSize"
+               android:background="#275F70">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:fontFamily="sans-serif-condensed-medium"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:text="BIO DATA"
+                   android:textSize="20dp">
+
+               </TextView>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="10dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:src="@drawable/person">
+
+               </de.hdodenhof.circleimageview.CircleImageView>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:layout_marginLeft="10dp">
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="NAME : ">
+
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/name_txt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="Priya">
+                       </TextView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="SURNAME : ">
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/surname_txt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="Ramani">
+                       </TextView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="FATHER NAME : ">
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/fname_txt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="Rajeshbhai">
+                       </TextView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="MOTHER NAME : ">
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/mname_txt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="Manishaben">
+                       </TextView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="30dp">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="AGE : ">
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/age_txt"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:text="18">
+
+                       </TextView>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/black">
+
+               </View>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_marginLeft="10dp">
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_marginTop="5dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text="GENDER : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/gender_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Female"
+                       android:textColor="@color/black">
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="BIRTH DATE : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/birth_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="19-12-2022"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="HOBBIES : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:id="@+id/hobbies1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Ramani"
+                           android:textColor="@color/black">
+
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/hobbies2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="Ramani"
+                           android:textColor="@color/black">
+
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/hobbies3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="Ramani"
+                           android:textColor="@color/black">
+
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/hobbies4"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="Ramani"
+                           android:textColor="@color/black">
+
+                       </TextView>
+
+                       <TextView
+                           android:id="@+id/hobbies5"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="5dp"
+                           android:text="Ramani"
+                           android:textColor="@color/black">
+
+                       </TextView>
+
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="VILLAGE : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/village_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Amreli"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="MOBILE : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/mbl_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="123456789"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="ADDRESS : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/add_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Manishaben"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="E-MAIL : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:id="@+id/mail_txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="gmail.com"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="COURSE : "
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Android Development"
+                       android:textColor="@color/black">
+
+                   </TextView>
+
+               </LinearLayout>
+
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Priya"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="SURNAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Ramani"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="FATHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Rajeshbhai"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="MOTHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Manishaben"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="AGE : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="18"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Priya"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="SURNAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Ramani"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="FATHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Rajeshbhai"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="MOTHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Manishaben"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="AGE : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="18"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Priya"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="SURNAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Ramani"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="FATHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Rajeshbhai"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="MOTHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Manishaben"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="AGE : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="18"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Priya"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="SURNAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Ramani"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="FATHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Rajeshbhai"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="MOTHER NAME : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="Manishaben"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+<!--               <LinearLayout-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="30dp"-->
+<!--                   android:layout_marginLeft="10dp">-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="AGE : "-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--                   <TextView-->
+<!--                       android:layout_width="wrap_content"-->
+<!--                       android:layout_height="wrap_content"-->
+<!--                       android:text="18"-->
+<!--                       android:textColor="@color/black"></TextView>-->
+
+<!--               </LinearLayout>-->
+
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
